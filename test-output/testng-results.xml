@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="parallelTest" duration-ms="99671" started-at="2016-11-18T13:45:29Z" finished-at="2016-11-18T13:47:09Z">
+    <groups>
+    </groups>
+    <test name="IETests" duration-ms="612" started-at="2016-11-18T13:45:29Z" finished-at="2016-11-18T13:45:30Z">
+      <class name="GTACAdmin.WSL_LOGIN">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:GTACAdmin.WSL_LOGIN@1c3736ac]" name="setup" is-config="true" duration-ms="482" started-at="2016-11-18T19:15:29Z" finished-at="2016-11-18T19:15:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="LoginTestcase()[pri:0, instance:GTACAdmin.WSL_LOGIN@1c3736ac]" name="LoginTestcase" duration-ms="22" started-at="2016-11-18T19:15:30Z" finished-at="2016-11-18T19:15:30Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at GTACAdmin.WSL_LOGIN.LoginTestcase(WSL_LOGIN.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestcase -->
+        <test-method status="PASS" signature="login()[pri:0, instance:GTACAdmin.WSL_LOGIN@1c3736ac]" name="login" duration-ms="23" started-at="2016-11-18T19:15:30Z" finished-at="2016-11-18T19:15:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- GTACAdmin.WSL_LOGIN -->
+    </test> <!-- IETests -->
+    <test name="FirefoxTests" duration-ms="76353" started-at="2016-11-18T13:45:30Z" finished-at="2016-11-18T13:46:46Z">
+      <class name="GTACAdmin.WSL_LOGIN">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:GTACAdmin.WSL_LOGIN@5da4ab42]" name="setup" is-config="true" duration-ms="30912" started-at="2016-11-18T19:15:30Z" finished-at="2016-11-18T19:16:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="LoginTestcase()[pri:0, instance:GTACAdmin.WSL_LOGIN@5da4ab42]" name="LoginTestcase" duration-ms="45411" started-at="2016-11-18T19:16:01Z" finished-at="2016-11-18T19:16:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestcase -->
+        <test-method status="PASS" signature="login()[pri:0, instance:GTACAdmin.WSL_LOGIN@5da4ab42]" name="login" duration-ms="6" started-at="2016-11-18T19:16:46Z" finished-at="2016-11-18T19:16:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- GTACAdmin.WSL_LOGIN -->
+    </test> <!-- FirefoxTests -->
+    <test name="chromeTests" duration-ms="22594" started-at="2016-11-18T13:46:46Z" finished-at="2016-11-18T13:47:09Z">
+      <class name="GTACAdmin.WSL_LOGIN">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:GTACAdmin.WSL_LOGIN@7903a032]" name="setup" is-config="true" duration-ms="9149" started-at="2016-11-18T19:16:46Z" finished-at="2016-11-18T19:16:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="LoginTestcase()[pri:0, instance:GTACAdmin.WSL_LOGIN@7903a032]" name="LoginTestcase" duration-ms="13416" started-at="2016-11-18T19:16:56Z" finished-at="2016-11-18T19:17:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTestcase -->
+        <test-method status="PASS" signature="login()[pri:0, instance:GTACAdmin.WSL_LOGIN@7903a032]" name="login" duration-ms="5" started-at="2016-11-18T19:17:09Z" finished-at="2016-11-18T19:17:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- GTACAdmin.WSL_LOGIN -->
+    </test> <!-- chromeTests -->
+  </suite> <!-- parallelTest -->
+</testng-results>
