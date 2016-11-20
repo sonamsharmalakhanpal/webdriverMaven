@@ -23,4 +23,11 @@
       <class name="GTACAdmin.WSL_LOGIN"/>
     </classes>
   </test> <!-- Test -->
+  
+  <test name="simple">
+  <classes>
+  <class name="GTACAdmin.test2"/>
+  <class name="GTACAdmin.testgetjenkins"/>
+  </classes>
+  </test>
 </suite> <!-- Suite -->
