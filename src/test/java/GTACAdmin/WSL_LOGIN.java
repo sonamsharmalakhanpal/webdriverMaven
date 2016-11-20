@@ -7,14 +7,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import org.openqa.selenium.ie.InternetExplorerDriver;
-
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class WSL_LOGIN {
-    String baseURL="https://gmail.com/";
-	private WebDriver driver;
+    String baseURL="https://google.com/";
+	public WebDriver driver;
     
     @Parameters({ "browser" })
     @BeforeTest    
@@ -33,6 +33,8 @@ public class WSL_LOGIN {
     	
     	 driver.manage().window().maximize();
     		driver.manage().timeouts().implicitlyWait(20L,TimeUnit.SECONDS);
+    		driver.navigate().to(baseURL);
+    		
 		
 	} catch (Exception e) {
 		System.out.println(e.getMessage());
@@ -45,9 +47,11 @@ public class WSL_LOGIN {
     public void LoginTestcase(){	
 	driver.navigate().to(baseURL);
 	System.out.println("jai Mata di Jai Maa Parwati ji to help me in Maven");
+	
+
 	}
     
-    @Test
+    @AfterTest
     public void login(){
     	System.out.println("jai Maa Parwati ji");
     }
